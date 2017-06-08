@@ -58,7 +58,7 @@ var sock,
     isOnline=true;//客服是否在线
 
 function sendWbsocket() {
-    window.location.href="wait-video.html";
+    //window.location.href="wait-video.html";
     sock = new SockJS('https://api.callcloud.com.cn/alerm');
     sock.onopen = function (e) {
         console.log('open1');
