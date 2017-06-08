@@ -59,7 +59,8 @@ var sock,
 
 function sendWbsocket() {
     //window.location.href="wait-video.html";
-    sock = new SockJS('https://api.callcloud.com.cn/alerm');
+    // sock = new SockJS('https://api.callcloud.com.cn/alerm');
+    sock = new SockJS('http://123.57.227.23:9080/alerm');
     sock.onopen = function (e) {
         console.log('open1');
         myOpenHandler(e)
