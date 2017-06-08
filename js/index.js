@@ -80,12 +80,12 @@ function myOpenHandler(e){
 //返回事件
 function myMessageHandler(e){
     console.log('message', e.data);
-    if(isOnline){
-        window.location.href="wait-video.html";
-    }else{
-        alert('客服不再线')
-    }
-    sock.close();
+    // if(isOnline){
+    //     window.location.href="wait-video.html";
+    // }else{
+    //     alert('客服不再线')
+    // }
+    // sock.close();
 }
 function  myCloseHandler(e){
     console.log("On close event has been called: " ,e);
